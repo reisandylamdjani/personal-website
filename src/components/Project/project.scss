@@ -5,34 +5,34 @@
 
 .project-title {
     font-size: 53px;
-        font-family: 'Coolvetica';
-        color: #ffd700;
-        font-weight: 400;
-        margin-top: 0;
+    font-family: 'Coolvetica';
+    color: #ffd700;
+    font-weight: 400;
+    margin-top: 10px;
+    position: absolute;
+    margin-bottom: 40px;
+    left: 150px;
+
+    &::before {
+        content: '<h1>';
+        font-family: 'La Belle Aurore';
+        font-size: 18px;
         position: absolute;
-        margin-bottom: 40px;
-        left: 150px;
+        margin-top: -10px;
+        left: -10px;
+        opacity: 0.6;
+        line-height: 18px;
+    }
 
-        &::before {
-            content: '<h1>';
-            font-family: 'La Belle Aurore';
-            font-size: 18px;
-            position: absolute;
-            margin-top: -10px;
-            left: -10px;
-            opacity: 0.6;
-            line-height: 18px;
-        }
-
-        &::after {
-            content: '</h1>';
-            font-family: 'La Belle Aurore';
-            font-size: 18px;
-            line-height: 18px;
-            position: absolute;
-            left: -30px;
-            bottom: -20px;
-            margin-left: 20px;
-            opacity: 0.6;
-        }
+    &::after {
+        content: '</h1>';
+        font-family: 'La Belle Aurore';
+        font-size: 18px;
+        line-height: 18px;
+        position: absolute;
+        left: -30px;
+        bottom: -20px;
+        margin-left: 20px;
+        opacity: 0.6;
+    }
 }
