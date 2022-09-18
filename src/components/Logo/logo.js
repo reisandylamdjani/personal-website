@@ -33,14 +33,14 @@ const Logo = () => {
             },
             {
                 opacity: 1,
-                delay: 4,
+                delay: 2,
                 duration: 4,
             }
         )
     }, [])
     return (
         <div className ='logo-container' ref = {bgRef}>
-            <img ref= {solidLogoRef} className='solid-logo' src = {LogoS} alt ="S"/>
+            <img ref= {solidLogoRef} className='solid-logo' src = {LogoS}/>
                 <svg
                     // width="559pt"
                     // height="897pt"

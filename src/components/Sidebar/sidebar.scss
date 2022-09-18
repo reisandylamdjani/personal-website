@@ -70,11 +70,6 @@ nav {
             transition: all 0.3s ease-out;
         }
 
-        &:first-child {
-            &::after {
-                content: 'HOME';
-            }
-        }
     }
     a.about-link {
         &:after {
@@ -93,6 +88,12 @@ nav {
             content: 'PROJECT';
         }
     }
+
+    a.home-link {
+        &:after {
+            content: 'HOME';
+        }
+    }    
 
     a.active {
         svg {
