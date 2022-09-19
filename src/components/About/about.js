@@ -5,8 +5,23 @@ import './about.scss'
 import { faAngular, faHtml5, faJsSquare, faCss3, faReact, faJava } from '@fortawesome/free-brands-svg-icons'
 import Loader from 'react-loaders'
 import React, { Component }  from 'react';
+import pic from '../../assets/images/IMG_6370.HEIC'
+import Slideshow from './slideshow'
 
 const About = () => {
+    const slides = [
+        {url: "https://raw.githubusercontent.com/monsterlessonsacademy/monsterlessonsacademy/221-react-image-slider/public/image-1.jpg", title: "wall1"},
+        { url : "https://raw.githubusercontent.com/monsterlessonsacademy/monsterlessonsacademy/221-react-image-slider/public/image-2.jpg", title: "boat" },
+        { url: "/Users/rei_crzy/personal-website/src/assets/images/IMG_6370.HEIC", title: "forest" },
+        // { url: "http://localhost:3000/image-4.jpg", title: "city" },
+        // { url: "http://localhost:3000/image-5.jpg", title: "italy" },
+      ];
+
+    const containerStyles = {
+    width: "1000px",
+    height: "280px",
+    margin: "0 auto",
+    };
     const [letterClass, setLetterClass] = useState('text-animate')
 
     useEffect(() => {
@@ -19,6 +34,12 @@ const About = () => {
     return (
         <>
             <div className='container about-page'>
+                {/* <img src ={pic}/> */}
+                <div> Hello</div>
+                <div 
+                    style={containerStyles}>
+                    <Slideshow slides={slides}/>
+                </div>
                 <div className='about-me-text-zone'>
                     <div class = "about-me-title">
                         <span className={`${letterClass} _15`}>A</span>
