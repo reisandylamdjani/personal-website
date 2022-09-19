@@ -12,7 +12,7 @@ const About = () => {
     const slides = [
         {url: "https://raw.githubusercontent.com/monsterlessonsacademy/monsterlessonsacademy/221-react-image-slider/public/image-1.jpg", title: "wall1"},
         { url : "https://raw.githubusercontent.com/monsterlessonsacademy/monsterlessonsacademy/221-react-image-slider/public/image-2.jpg", title: "boat" },
-        { url: "/Users/rei_crzy/personal-website/src/assets/images/IMG_6370.HEIC", title: "forest" },
+        { url: "https://github.com/reisandylamdjani/personal-website/blob/phase-one-website/src/assets/images/DSC09020.JPG", title: "forest" },
         // { url: "http://localhost:3000/image-4.jpg", title: "city" },
         // { url: "http://localhost:3000/image-5.jpg", title: "italy" },
       ];
