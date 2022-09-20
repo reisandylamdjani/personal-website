@@ -1,18 +1,14 @@
-import LogoTitle from '../../assets/images/logo-s.png';
 import { Link } from 'react-router-dom';
 import './home.scss'
 import {useState } from 'react';
-import AnimatedLetters from '../AnimatedLetters/animatedLetters';
 import { useEffect } from 'react';
 import Logo from '../Logo/logo';
 import Loader from 'react-loaders';
-import React, { Component }  from 'react';
+import React from 'react';
 
 const Home = () => {
     const [letterClass, setLetterClass] = useState('text-animate')
     const nameArray = [' ', 'R', 'e', 'i', 's', 'a', 'n', 'd', 'y']
-    //const jobArray = ['C', 'o', 'm','p', 'u', 't', 'e', 'r', ' ',
-                   // 'E', 'n', 'g', 'i', 'n', 'e', 'e', 'r']
 
     useEffect(() => {
         const timer = setTimeout(() => {
@@ -75,7 +71,7 @@ const Home = () => {
                     <h2> Student at University of California, San Diego</h2>
                     <Link to= "/contact" className = 'flat-button'>CONTACT ME</Link>
                 </div>
-                <Logo>Go Tritons!</Logo>
+                <Logo></Logo>
             </div>
             <Loader type = "pacman" />
         </>
