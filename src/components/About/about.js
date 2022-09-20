@@ -5,23 +5,22 @@ import './about.scss'
 import { faAngular, faHtml5, faJsSquare, faCss3, faReact, faJava } from '@fortawesome/free-brands-svg-icons'
 import Loader from 'react-loaders'
 import React, { Component }  from 'react';
-import pic from '../../assets/images/IMG_6370.HEIC'
+import pic from '../../assets/images/test1.JPG'
 import Slideshow from './slideshow'
 
 const About = () => {
     const slides = [
-        {url: "https://raw.githubusercontent.com/monsterlessonsacademy/monsterlessonsacademy/221-react-image-slider/public/image-1.jpg", title: "wall1"},
-        { url : "https://raw.githubusercontent.com/monsterlessonsacademy/monsterlessonsacademy/221-react-image-slider/public/image-2.jpg", title: "boat" },
-        { url: "https://github.com/reisandylamdjani/personal-website/blob/phase-one-website/src/assets/images/DSC09020.JPG", title: "forest" },
-        // { url: "http://localhost:3000/image-4.jpg", title: "city" },
-        // { url: "http://localhost:3000/image-5.jpg", title: "italy" },
+        {url: "https://i.postimg.cc/6QW7hFPJ/IMG-6428.jpg", title: "soloPic"},
+        {url: "https://i.postimg.cc/h4TmbF4v/IMG-6335.jpg", title: "koko's wedding" },
+        {url: "https://i.postimg.cc/pdKvcBmf/IMG-6420.jpg", title: "halloweenPhotoshoot" },
+        {url: "https://i.postimg.cc/nrHD8FfV/DSC8867.jpg", title: "The sea with rocks"},
+        {url: "https://i.postimg.cc/HWRgPSwR/IMG-6397.jpg", title: "SDSnowboardTrip2021" },
+        {url: "https://i.postimg.cc/Wb6Pb0q1/mammooth-Snowboard.jpg", title: "mammoothSnowboard" },
+        {url: 'https://i.postimg.cc/Kcs7MTPm/test1.jpg', title: "The other sea" },
+        {url: "https://i.postimg.cc/Mpqfv0sP/DSC09020.jpg", title: "SDHiking" },
+        {url: "https://i.postimg.cc/y6yd87Ym/08b23248-05e7-4255-9af6-55c618a3cf3e.jpg", title: "halloweenPhotoshoot" }
       ];
 
-    const containerStyles = {
-    width: "1000px",
-    height: "280px",
-    margin: "0 auto",
-    };
     const [letterClass, setLetterClass] = useState('text-animate')
 
     useEffect(() => {
@@ -35,9 +34,7 @@ const About = () => {
         <>
             <div className='container about-page'>
                 {/* <img src ={pic}/> */}
-                <div> Hello</div>
-                <div 
-                    style={containerStyles}>
+                <div className='container-styles'>
                     <Slideshow slides={slides}/>
                 </div>
                 <div className='about-me-text-zone'>
