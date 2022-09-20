@@ -3,9 +3,28 @@ import Loader from 'react-loaders'
 import AnimatedLetters from '../AnimatedLetters/animatedLetters'
 import { useState, useEffect } from 'react'
 import React, { Component }  from 'react';
+import { useRef } from 'react'
+import emailjs from '@emailjs/browser'
 
 const Contact = () => {
     const [letterClass, setLetterClass] = useState('text-animate')
+    const form = useRef()
+
+    const sendEmail = (e) => {
+        e.preventDefault()
+    
+        emailjs
+          .sendForm('service_hwxjhka', 'template_0kn8eoe', form.current, 'Mx1jG9aMC-_9FMMB4')
+          .then(
+            () => {
+              alert('Message successfully sent!')
+              window.location.reload(false)
+            },
+            () => {
+              alert('Failed to send the message, please try again')
+            }
+          )
+      }
 
     useEffect(() => {
         const timer = setTimeout(() => {
@@ -35,7 +54,7 @@ const Contact = () => {
                         the form below.
                     </div>
                     <div className='contact-form'>
-                        <form>
+                        <form ref={form} onSubmit={sendEmail}>
                             <ul>
                                 <li className='half'>
                                     <input 

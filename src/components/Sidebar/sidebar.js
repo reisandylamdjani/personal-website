@@ -5,6 +5,7 @@ import { faHome, faUser, faEnvelope, faFile, faComputer } from '@fortawesome/fre
 import { faGithub, faLinkedin} from '@fortawesome/free-brands-svg-icons'
 import React from 'react';
 
+
 const Sidebar = () => (
     <div className='nav-bar'>
         <nav>
