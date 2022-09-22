@@ -58,7 +58,7 @@ const Sidebar = () => {
                 <a 
                     target = "_blank"
                     rel = "noreferrer"
-                    href = "https://bit.ly/ReisandyLamdjaniResume">
+                    href = "https://bit.ly/publicResume">
                     <FontAwesomeIcon icon={faFile} color = "#4d4d4e" />
                 </a>
             </li>
