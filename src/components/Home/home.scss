@@ -76,4 +76,12 @@
             color: #333;
         }
     }
+    .logo-container {
+        width: 550px;
+        height: 550px;
+        animation: fadeInUp 3s 1s;
+        animation-fill-mode: forwards;
+        margin-top: 75px;
+        margin-left: 695px;
+    }
 }

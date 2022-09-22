@@ -2,9 +2,9 @@ import { Link } from 'react-router-dom';
 import './home.scss'
 import {useState } from 'react';
 import { useEffect } from 'react';
-import Logo from '../Logo/logo';
 import Loader from 'react-loaders';
 import React from 'react';
+import pic from '../../assets/images/ucsd-logo.png'
 
 const Home = () => {
     const [letterClass, setLetterClass] = useState('text-animate')
@@ -71,7 +71,9 @@ const Home = () => {
                     <h2> Student at University of California, San Diego</h2>
                     <Link to= "/contact" className = 'flat-button'>CONTACT ME</Link>
                 </div>
-                <Logo></Logo>
+                <div>
+                    <img className='logo-container' src={pic} alt="logo"></img>
+                </div>
             </div>
             <Loader type = "pacman" />
         </>
