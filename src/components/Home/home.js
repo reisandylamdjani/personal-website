@@ -25,7 +25,7 @@ const Home = () => {
             <Container>
                 <Row>
                     <div className="container home-page">
-                        <Col md={8} lg = {6}>  
+                        <Col md={10} lg = {8} className = 'ps-3 ml-3'>  
                             <div className="text-zone">
                                 <h1>
                                 <span className={letterClass}>H</span>
@@ -78,7 +78,7 @@ const Home = () => {
                                 <Link to= "/contact" className = 'flat-button'>CONTACT ME</Link>
                             </div>
                         </Col>
-                        <Col md={4} lg={6}>
+                        <Col md={2} lg={4} className='ml-2'>
                             <div>
                                 <img className='logo-container' src={pic} alt="logo"></img>
                             </div>

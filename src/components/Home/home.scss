@@ -4,7 +4,7 @@
         left: 10%;
         top: 50%;
         transform: translateY(-50%);
-        width: 40%;
+        //width: 100%;
         max-height: 90%;
     }
 
@@ -78,10 +78,10 @@
     }
     .logo-container {
         width: 550px;
-        height: 600px;
+        height: 550px;
         animation: fadeInUp 3s 1s;
         animation-fill-mode: forwards;
-        margin-top: 75px;
-        margin-left: 900px;
+        margin-top: 45px;
+        margin-left: 745px;
     }
 }
