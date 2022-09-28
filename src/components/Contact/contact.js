@@ -5,10 +5,12 @@ import { useState, useEffect } from 'react'
 import React, { Component }  from 'react';
 import { useRef } from 'react'
 import emailjs from '@emailjs/browser'
+import { useNavigate } from 'react-router-dom';
 
 const Contact = () => {
     const [letterClass, setLetterClass] = useState('text-animate')
     const form = useRef()
+    const navigate = useNavigate();
 
     const sendEmail = (e) => {
         e.preventDefault()
@@ -24,6 +26,7 @@ const Contact = () => {
               alert('Failed to send the message, please try again')
             }
           )
+        navigate('/home')
       }
 
     useEffect(() => {

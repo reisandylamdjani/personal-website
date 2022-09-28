@@ -25,7 +25,7 @@ const Home = () => {
             <Container>
                 <Row>
                     <div className="container home-page">
-                        <Col md={10} lg = {8} className = 'ps-3 ml-3'>  
+                        <Col md={10} lg = {8} className = 'ps-3 ml-5 pl-3'>  
                             <div className="text-zone">
                                 <h1>
                                 <span className={letterClass}>H</span>
