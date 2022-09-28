@@ -26,7 +26,7 @@ const Contact = () => {
               alert('Failed to send the message, please try again')
             }
           )
-        navigate('/home')
+        navigate('/')
       }
 
     useEffect(() => {
