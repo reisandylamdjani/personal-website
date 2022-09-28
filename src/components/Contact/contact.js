@@ -24,9 +24,10 @@ const Contact = () => {
             },
             () => {
               alert('Failed to send the message, please try again')
-            }
+            },
+            navigate('/contact')
           )
-        navigate('/')
+        
       }
 
     useEffect(() => {
