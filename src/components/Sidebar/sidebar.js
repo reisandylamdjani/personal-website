@@ -58,7 +58,7 @@ const Sidebar = () => {
                 <a 
                     target = "_blank"
                     rel = "noreferrer"
-                    href = "https://drive.google.com/file/d/1NGrrNS6w-TZkOmkT4XKnP5TH_aS-QZno/view?usp=sharing">
+                    href = "https://drive.google.com/file/d/1sChG0EAXZ5XP6j95RHuRKtptPD__fRsE/view?usp=sharing">
                     <FontAwesomeIcon icon={faFile} color = "#4d4d4e" />
                 </a>
             </li>
