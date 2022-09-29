@@ -87,7 +87,7 @@
     }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 600px) {
     .logo-container {
         display: flex;
         flex-direction: column;
@@ -98,10 +98,9 @@
     .home-page {
         overflow: auto;
         .text-zone {
-            left: 40%;
+            left: 30%;
             top: 50%;
             width: 500px;
-
         }
     }
 }
