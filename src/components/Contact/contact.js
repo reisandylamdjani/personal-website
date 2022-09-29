@@ -41,18 +41,20 @@ const Contact = () => {
         <div>
             <div className = 'container contact-page'>
                 <div className='text-zone'>
-                    <h1>
-                        <span className={`${letterClass} _15`}>C</span>
-                        <span className={`${letterClass} _16`}>o</span>
-                        <span className={`${letterClass} _17`}>n</span>
-                        <span className={`${letterClass} _18`}>t</span>
-                        <span className={`${letterClass} _19`}>a</span>
-                        <span className={`${letterClass} _19`}>c</span>
-                        <span className={`${letterClass} _19`}>t</span>
-                        <span className={`${letterClass} _20`}> </span>
-                        <span className={`${letterClass} _21`}>M</span>
-                        <span className={`${letterClass} _22`}>e</span>
-                    </h1>
+                    <div className='contact-me-title'>
+                        <h1>
+                            <span className={`${letterClass} _15`}>C</span>
+                            <span className={`${letterClass} _16`}>o</span>
+                            <span className={`${letterClass} _17`}>n</span>
+                            <span className={`${letterClass} _18`}>t</span>
+                            <span className={`${letterClass} _19`}>a</span>
+                            <span className={`${letterClass} _19`}>c</span>
+                            <span className={`${letterClass} _19`}>t</span>
+                            <span className={`${letterClass} _20`}> </span>
+                            <span className={`${letterClass} _21`}>M</span>
+                            <span className={`${letterClass} _22`}>e</span>
+                        </h1>
+                    </div>
                     <div class = "contact-me-text">
                         You can connect with me through lamdjani@gmail.com or simply fill out 
                         the form below.

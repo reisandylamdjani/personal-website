@@ -76,6 +76,28 @@
     animation: fadeInUp 3s 1s;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 600px) {
+    .contact-me-text {
+        width: 300px;
+        margin-left: 105px;
+    }
+
+    .contact-form {
+        width: 100%;
+        margin-top: 370px;
+        display: flex;
+        justify-content: center;
     
+        ul {
+            width: 300px;
+            li {
+                width: 300px;
+            }
+        }
+    }
+
+    .contact-me-title {
+        width: 280px;
+        margin-left: 90px;
+    }
 }
