@@ -43,18 +43,21 @@ export const Projects = () => {
                                             <Nav.Link eventKey="first">UCSD RoboCar Jetson Nano
                                             </Nav.Link>
                                         </Nav.Item>
-                                        {/* <Nav.Item>
-                                            <Nav.Link eventKey="second">Tab Two</Nav.Link>
-                                        </Nav.Item>
                                         <Nav.Item>
+                                            <Nav.Link eventKey="second">SayIt Assistant</Nav.Link>
+                                        </Nav.Item>
+                                        {/* <Nav.Item>
+                                            <Nav.Link eventKey="third">SayIt Assistant</Nav.Link>
+                                        </Nav.Item> */}
+                                        {/* <Nav.Item>
                                             <Nav.Link eventKey="third">Tab Three</Nav.Link>
                                         </Nav.Item> */}
                                     </Nav>
                                     <Tab.Content>
-                                        <a href="https://github.com/UCSD-ECEMAE-148/winter-2023-final-project-team-15">
+                                        <Tab.Pane eventKey="first">
+                                        <a href="https://github.com/UCSD-ECEMAE-148/winter-2023-final-project-team-15" target="_blank">
                                             ECE 148: Intro to Autonomous Vehicle
                                         </a>
-                                        <Tab.Pane eventKey="first">
                                             <Row>
                                                 {
                                                     projects.map((project, index) => {
@@ -67,8 +70,14 @@ export const Projects = () => {
                                                 }
                                             </Row>
                                         </Tab.Pane>
-                                        {/* <Tab.Pane eventKey="second"> Loren Ipsum</Tab.Pane>
-                                        <Tab.Pane eventKey="third"> Loren Ipsum</Tab.Pane> */}
+                                        <Tab.Pane eventKey="second">
+                                            <a href="https://github.com/ucsd-cse110-sp23/cse-110-project-team-17" target="_blank">
+                                                CSE 110: Software Engineering
+                                            </a>
+                                        </Tab.Pane>
+                                        {/* <Tab.Pane eventKey="third"> Loren Ipsum</Tab.Pane>
+                                        <Tab.Pane eventKey="fourth"> Loren Ipsum</Tab.Pane>
+                                        <Tab.Pane eventKey="fifth"> Loren Ipsum</Tab.Pane> */}
                                     </Tab.Content>
                                 </Tab.Container>
                             </div>

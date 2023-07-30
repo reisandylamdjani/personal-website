@@ -13,8 +13,8 @@ export const Footer = () => {
                     </Col> */}
                     <Col sm={12} className="text-center text-sm-end">
                         <div className="social-icon">
-                        <a href="https://www.linkedin.com/in/reisandylamdjani/"><img src={navIcon1} alt="LinkedIn" /></a>
-                        <a href="https://github.com/reisandylamdjani"><img src={navIcon2} alt="GitHub" /></a>
+                        <a href="https://www.linkedin.com/in/reisandylamdjani/" target="_blank"><img src={navIcon1} alt="LinkedIn" /></a>
+                        <a href="https://github.com/reisandylamdjani" target="_blank"><img src={navIcon2} alt="GitHub" /></a>
                         </div>
                         <p class="text-white">CopyRight 2023. All Right Reserved by Reisandy Lamdjani</p>
                     </Col>
