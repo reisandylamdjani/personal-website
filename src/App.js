@@ -1,26 +1,25 @@
-import './App.scss';
-import React from 'react';
-import {Routes, Route} from 'react-router-dom'
-import Home from './components/Home/home'
-import About from './components/About/about'
-import Contact from './components/Contact/contact'
-import Layout from './components/Layout/layout'
-import Project from './components/Project/project'
+// https://animate.style/
+
+import logo from './logo.svg';
+import './App.css';
+import { NavBar } from './component/NavBar';
+import { Banner } from './component/Banner';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { Skills } from './component/Skills';
+import { Projects } from './component/Projects';
+import { Contact } from './component/Contact';
+import { Footer } from './component/Footer';
 
 function App() {
   return (
-    <>
-      <Routes>
-        <Route path="/" element={<Layout />}>
-          <Route index element={<Home />} />
-          <Route path ="/home" element = {<Home/>}/>
-          <Route path="/about" element={<About />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/project" element={<Project />} />
-        </Route>
-      </Routes>
-    </>
+    <div className="App">
+      <NavBar></NavBar> 
+      <Banner></Banner>
+      <Projects></Projects>
+      <Skills></Skills>
+      <Contact></Contact>
+      <Footer></Footer>
+    </div>
   );
 }
-
-export default App
+export default App;
