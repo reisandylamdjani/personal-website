@@ -27,24 +27,6 @@ export const Contact = () => {
     }
 
     const handleSubmit = async (e) => {
-        // e.preventDefault();
-        // setButtonText("Sending...");
-        // let response = await fetch("http://localhost:5000/contact", {
-        //   method: "POST",
-        //   headers: {
-        //     "Content-Type": "application/json;charset=utf-8",
-        //   },
-        //   body: JSON.stringify(formDetails),
-        // });
-        // setButtonText("Send");
-        // let result = await response.json();
-        // setFormDetails(formInitialDetails);
-        // if (result.code == 200) {
-        //   setStatus({ succes: true, message: 'Message sent successfully'});
-        // } else {
-        //   setStatus({ succes: false, message: 'Something went wrong, please try again later.'});
-        // }
-
         e.preventDefault();
         setButtonText("Send");
     emailjs
@@ -59,10 +41,12 @@ export const Contact = () => {
           console.log(result.text);
           console.log("message sent");
           setStatus({ succes: true, message: 'Message sent successfully'});
+          setFormDetails(formInitialDetails);
         },
         (error) => {
           console.log(error.text);
           setStatus({ succes: false, message: 'Something went wrong, please try again later.'});
+          setFormDetails(formInitialDetails);
         }
       );
     };
@@ -91,7 +75,7 @@ export const Contact = () => {
                                             onChange={(e) => onFormUpdate('email', e.target.value)}/>
                                 </Col>
                                 <Col sm={6} className="px-1">
-                                    <input type="tel" name = "phone_number" value={formDetails.phone} placeholder="Phone Number"
+                                    <input type="tel" name = "phone_number" value={formDetails.phoneNumber} placeholder="Phone Number"
                                             onChange={(e) => onFormUpdate('phoneNumber', e.target.value)}/>
                                 </Col>
                                 <Col>

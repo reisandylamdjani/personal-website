@@ -51,7 +51,7 @@ export const Banner = () => {
                         <TrackVisibility>
                         {({isVisible}) => 
                             <div className={isVisible ? "animate__animated animate__backInLeft" : ""}>
-                                <span className="tagline">Welcome to my Portfolio</span>
+                                {/* <span className="tagline">Welcome to my Portfolio</span> */}
                                 <h1>{`Hi I'm Reisandy, `}<span className="wrap">{text}</span></h1>
                                 <p>Student at University of California, San Diego</p>
                                 <button onClick={() => console.log('connect')}>Let's Connect!<ArrowRightCircle size={25}/></button>
@@ -60,7 +60,7 @@ export const Banner = () => {
                         </TrackVisibility>
                     </Col>
                     <Col xs={12} md={6} xl={5}>
-                        {/* <img src={headerImg} alt="Header Img"/> */}
+                        {/* <img src={face} alt="Header Img"/> */}
                     </Col>
                 </Row>
             </Container>
